@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "oldbabies",
+  "version": "${version}",
+  "name": "Old Baby Animals",
+  "description": "Restores pre-Tiny Takeover baby mob models, textures and sounds. Client-side only.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.oldbabies.OldBabiesClient"] },
+  "mixins": ["oldbabies.mixins.json"],
+  "depends": { "fabricloader": "*", "minecraft": "~26.3", "java": ">=25" }
+}
