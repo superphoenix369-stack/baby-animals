@@ -10,7 +10,11 @@ jobs:
           distribution: temurin
           java-version: 25
       - uses: gradle/actions/setup-gradle@v4
-      - run: ./gradlew build
+        with:
+          gradle-version: current
+      # No wrapper committed yet, so use the installed Gradle.
+      # Once gradlew exists in the repo, change this to ./gradlew build
+      - run: gradle build
       - uses: actions/upload-artifact@v4
         with:
           name: oldbabies
